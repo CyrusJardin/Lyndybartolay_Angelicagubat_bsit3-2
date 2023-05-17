@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Substitution Cipher</title>
+    <script src="script.js"></script>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+        .container {
+          margin: 50px auto;
+          width: 400px;
+          padding: 20px;
+          border: 1px solid black
+          ;
+          border-radius: 5px;
+          background-color: red;
+
+        }
+        .input-field {
+          margin-bottom: 10px;
+        }
+        button {
+          padding: 20px 25px;
+          background-color: blue;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Substitution Cipher</h1>
+    <input type="number" id="keys" placeholder="Select your key">
+    <h2>Encryption</h2>
+    <textarea id="plainText" rows="5" cols="50" placeholder="Enter text to encrypt"></textarea>
+    <br>
+    <textarea id="encryptedText" rows="5" cols="50" placeholder="Encrypted text" readonly></textarea>
+    <br>
+    <button onclick="encrypt()">Encryption</button>
+    
+    <h2>Decryption</h2>
+    <textarea id="encryptedText2" rows="5" cols="50" placeholder="Enter text to decrypt"></textarea>
+    <br>
+    <textarea id="decryptedText" rows="5" cols="50" placeholder="Decrypted text" readonly></textarea>
+    <br>
+    <button onclick="decrypt()">Decryption</button>
+</div>
+</body>
+</html>
